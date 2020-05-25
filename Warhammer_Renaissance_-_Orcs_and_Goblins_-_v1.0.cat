@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9387-81b9-925b-5421" name="Warhammer Renaissance - Orcs and Goblins - v1.0" revision="1" battleScribeVersion="2.03" authorName="M. Strårup" authorUrl="https://github.com/steampunklolcat/whren" library="false" gameSystemId="1216-28de-7047-6b53" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9387-81b9-925b-5421" name="Warhammer Renaissance - Orcs and Goblins - v1.0" revision="1" battleScribeVersion="2.03" authorName="M. Strårup" authorUrl="https://github.com/steampunklolcat/whren" library="false" gameSystemId="1216-28de-7047-6b53" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="13b5-6fa8-623d-a0f8" name="BLACK ORC WARLORD" publicationId="78e3-1ead-0759-9022" hidden="false" collective="false" import="true" type="unit">
       <rules>
@@ -238,7 +238,7 @@ take 3 magic items.</description>
         <entryLink id="77b9-9ff4-6ae0-aeb3" name="Crossbow" hidden="false" collective="false" import="true" targetId="13d9-8e30-8fe1-5283" type="selectionEntry"/>
         <entryLink id="7259-b3be-df8b-9fec" name="Shield" hidden="false" collective="false" import="true" targetId="b352-961b-c5c6-59d9" type="selectionEntry"/>
         <entryLink id="3547-c57b-833a-196a" name="Double Handed Weapons" hidden="false" collective="false" import="true" targetId="6ec3-fd33-9ff6-183f" type="selectionEntry"/>
-        <entryLink id="52b1-f9d3-67c2-fe14" name="Bow" hidden="false" collective="false" import="true" targetId="5326-14cb-3321-ee86" type="selectionEntry"/>
+        <entryLink id="52b1-f9d3-67c2-fe14" name="Bow" hidden="false" collective="false" import="true" targetId="2fd4-7250-7c22-c082" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="fcac-3c52-8cf7-add0" value="0.0"/>
@@ -260,20 +260,6 @@ a short bow gains poisoned arrows. May take 3 magic items.</description>
       <infoLinks>
         <infoLink id="6757-6bc3-7430-0112" name="Hand Weapon" hidden="false" targetId="a466-c9d8-db3a-8d6c" type="profile"/>
         <infoLink id="7d8e-b9c5-b39c-8b40" name="Goblin Types" hidden="false" targetId="e338-8fae-7b1e-39aa" type="rule"/>
-        <infoLink id="3cbd-3d0b-b611-701b" name="Poison" hidden="true" targetId="2ba4-0a2e-5696-d6fe" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3902-505f-abad-ca32" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a22d-0881-dfd6-6390" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8117-6ad1-eecd-ded5" name="New CategoryLink" hidden="false" targetId="7086-559b-f3af-ba5e" primary="true"/>
@@ -413,7 +399,24 @@ a short bow gains poisoned arrows. May take 3 magic items.</description>
         <entryLink id="82ec-d20e-5e57-b608" name="Spear" hidden="false" collective="false" import="true" targetId="4907-6f1e-f938-438d" type="selectionEntry"/>
         <entryLink id="98b3-3d0b-88b5-8d47" name="Shield" hidden="false" collective="false" import="true" targetId="b352-961b-c5c6-59d9" type="selectionEntry"/>
         <entryLink id="674f-0268-ab2d-593a" name="Double Handed Weapons" hidden="false" collective="false" import="true" targetId="6ec3-fd33-9ff6-183f" type="selectionEntry"/>
-        <entryLink id="a22d-0881-dfd6-6390" name="Short Bow" hidden="false" collective="false" import="true" targetId="7e22-5721-0163-69ac" type="selectionEntry"/>
+        <entryLink id="bc71-0872-bc8d-0d37" name="Short Bow" hidden="false" collective="false" import="true" targetId="8eac-d7e3-f6c4-36d2" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3902-505f-abad-ca32" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="9b9d-f124-8a0a-e58a" name="Short Bow with Poisoned Arrows" hidden="true" collective="false" import="true" targetId="5357-161f-edc0-7cc4" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3902-505f-abad-ca32" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="fcac-3c52-8cf7-add0" value="0.0"/>
@@ -499,7 +502,7 @@ take 3 magic items.</description>
         <entryLink id="5652-0fca-ad9d-b1e8" name="Spear" hidden="false" collective="false" import="true" targetId="4907-6f1e-f938-438d" type="selectionEntry"/>
         <entryLink id="6243-3973-6d80-34fb" name="Shield" hidden="false" collective="false" import="true" targetId="b352-961b-c5c6-59d9" type="selectionEntry"/>
         <entryLink id="71eb-de55-c460-4dcc" name="Double Handed Weapons" hidden="false" collective="false" import="true" targetId="6ec3-fd33-9ff6-183f" type="selectionEntry"/>
-        <entryLink id="8aca-c658-50c4-6676" name="Bow" hidden="false" collective="false" import="true" targetId="5326-14cb-3321-ee86" type="selectionEntry"/>
+        <entryLink id="8aca-c658-50c4-6676" name="Bow" hidden="false" collective="false" import="true" targetId="2fd4-7250-7c22-c082" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="fcac-3c52-8cf7-add0" value="0.0"/>
@@ -596,7 +599,7 @@ take 2 magic items.</description>
         <entryLink id="2656-3e71-758a-64ff" name="Crossbow" hidden="false" collective="false" import="true" targetId="13d9-8e30-8fe1-5283" type="selectionEntry"/>
         <entryLink id="72e2-ee7a-b22a-ec64" name="Shield" hidden="false" collective="false" import="true" targetId="b352-961b-c5c6-59d9" type="selectionEntry"/>
         <entryLink id="46d3-c8fb-c45e-10db" name="Double Handed Weapons" hidden="false" collective="false" import="true" targetId="6ec3-fd33-9ff6-183f" type="selectionEntry"/>
-        <entryLink id="681d-5755-7061-c7c7" name="Bow" hidden="false" collective="false" import="true" targetId="5326-14cb-3321-ee86" type="selectionEntry"/>
+        <entryLink id="681d-5755-7061-c7c7" name="Bow" hidden="false" collective="false" import="true" targetId="2fd4-7250-7c22-c082" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="fcac-3c52-8cf7-add0" value="0.0"/>
@@ -682,7 +685,7 @@ take 2 magic items.</description>
         <entryLink id="ed2b-a3b2-af6a-45c8" name="Spear" hidden="false" collective="false" import="true" targetId="4907-6f1e-f938-438d" type="selectionEntry"/>
         <entryLink id="c1a3-5633-8268-358c" name="Shield" hidden="false" collective="false" import="true" targetId="b352-961b-c5c6-59d9" type="selectionEntry"/>
         <entryLink id="ebf7-6720-40d8-8116" name="Double Handed Weapons" hidden="false" collective="false" import="true" targetId="6ec3-fd33-9ff6-183f" type="selectionEntry"/>
-        <entryLink id="cdb4-7fde-a374-f702" name="Bow" hidden="false" collective="false" import="true" targetId="5326-14cb-3321-ee86" type="selectionEntry"/>
+        <entryLink id="cdb4-7fde-a374-f702" name="Bow" hidden="false" collective="false" import="true" targetId="2fd4-7250-7c22-c082" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="fcac-3c52-8cf7-add0" value="0.0"/>
@@ -947,7 +950,7 @@ double handed weapon (+3), a bow (+2). May take 1 magic item</description>
         <entryLink id="f1ae-e6cf-22cf-eb11" name="Spear" hidden="false" collective="false" import="true" targetId="4907-6f1e-f938-438d" type="selectionEntry"/>
         <entryLink id="2827-9eda-abde-3a2d" name="Shield" hidden="false" collective="false" import="true" targetId="b352-961b-c5c6-59d9" type="selectionEntry"/>
         <entryLink id="194b-0bab-17ed-1592" name="Double Handed Weapons" hidden="false" collective="false" import="true" targetId="6ec3-fd33-9ff6-183f" type="selectionEntry"/>
-        <entryLink id="1b0a-97c4-7647-5542" name="Bow" hidden="false" collective="false" import="true" targetId="5326-14cb-3321-ee86" type="selectionEntry"/>
+        <entryLink id="1b0a-97c4-7647-5542" name="Bow" hidden="false" collective="false" import="true" targetId="2fd4-7250-7c22-c082" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="fcac-3c52-8cf7-add0" value="0.0"/>
@@ -1035,7 +1038,7 @@ weapon (+3), a bow (+2) a crossbow (+3). May take 1 magic item.</description>
         <entryLink id="39c8-7ee8-63fa-c20c" name="Crossbow" hidden="false" collective="false" import="true" targetId="13d9-8e30-8fe1-5283" type="selectionEntry"/>
         <entryLink id="559b-af38-3a3a-734d" name="Shield" hidden="false" collective="false" import="true" targetId="b352-961b-c5c6-59d9" type="selectionEntry"/>
         <entryLink id="dbbb-9b38-cc09-5823" name="Double Handed Weapons" hidden="false" collective="false" import="true" targetId="6ec3-fd33-9ff6-183f" type="selectionEntry"/>
-        <entryLink id="fd93-bf3b-00ef-f204" name="Bow" hidden="false" collective="false" import="true" targetId="5326-14cb-3321-ee86" type="selectionEntry"/>
+        <entryLink id="fd93-bf3b-00ef-f204" name="Bow" hidden="false" collective="false" import="true" targetId="2fd4-7250-7c22-c082" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="fcac-3c52-8cf7-add0" value="0.0"/>
@@ -1196,7 +1199,7 @@ poisoned arrows. May take 2 magic items.</description>
         <entryLink id="51c8-c5a8-cda0-014f" name="Spear" hidden="false" collective="false" import="true" targetId="4907-6f1e-f938-438d" type="selectionEntry"/>
         <entryLink id="8dbb-6da7-a6ff-d1c6" name="Shield" hidden="false" collective="false" import="true" targetId="b352-961b-c5c6-59d9" type="selectionEntry"/>
         <entryLink id="3b31-d23d-6b0c-38d6" name="Double Handed Weapons" hidden="false" collective="false" import="true" targetId="6ec3-fd33-9ff6-183f" type="selectionEntry"/>
-        <entryLink id="999a-c36d-c238-59df" name="Short Bow" hidden="false" collective="false" import="true" targetId="7e22-5721-0163-69ac" type="selectionEntry">
+        <entryLink id="999a-c36d-c238-59df" name="Short Bow" hidden="false" collective="false" import="true" targetId="8eac-d7e3-f6c4-36d2" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -1235,20 +1238,6 @@ with a short bow gains poisoned arrows. May take 1 magic item.</description>
       <infoLinks>
         <infoLink id="aa55-6e35-aaba-b811" name="Hand Weapon" hidden="false" targetId="a466-c9d8-db3a-8d6c" type="profile"/>
         <infoLink id="e08e-c781-991b-e916" name="Goblin Types" hidden="false" targetId="e338-8fae-7b1e-39aa" type="rule"/>
-        <infoLink id="15ff-7279-f2bc-0241" name="Poison" hidden="true" targetId="2ba4-0a2e-5696-d6fe" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c922-5e6f-79ea-d331" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6ef-cea3-4647-3a97" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c1e3-04ca-e469-bd88" name="New CategoryLink" hidden="false" targetId="7086-559b-f3af-ba5e" primary="true"/>
@@ -1388,7 +1377,24 @@ with a short bow gains poisoned arrows. May take 1 magic item.</description>
         <entryLink id="d148-6965-cdaa-7ff9" name="Spear" hidden="false" collective="false" import="true" targetId="4907-6f1e-f938-438d" type="selectionEntry"/>
         <entryLink id="21c2-9884-5cd3-247a" name="Shield" hidden="false" collective="false" import="true" targetId="b352-961b-c5c6-59d9" type="selectionEntry"/>
         <entryLink id="d6f6-166f-c426-2e63" name="Double Handed Weapons" hidden="false" collective="false" import="true" targetId="6ec3-fd33-9ff6-183f" type="selectionEntry"/>
-        <entryLink id="e6ef-cea3-4647-3a97" name="Short Bow" hidden="false" collective="false" import="true" targetId="7e22-5721-0163-69ac" type="selectionEntry"/>
+        <entryLink id="6571-de52-8cdd-95c5" name="Short Bow" hidden="false" collective="false" import="true" targetId="8eac-d7e3-f6c4-36d2" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c922-5e6f-79ea-d331" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="1612-10f9-1799-c6ed" name="Short Bow with Poisoned Arrows" hidden="true" collective="false" import="true" targetId="5357-161f-edc0-7cc4" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c922-5e6f-79ea-d331" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="fcac-3c52-8cf7-add0" value="0.0"/>
