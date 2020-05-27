@@ -25,7 +25,7 @@ Lizardmen - not started.
 
 Norse - not started.
 
-Orcs and Goblins - work started.
+Orcs and Goblins - mostly done, finetuning is still ongoing.
 
 Skaven - not started.
 
